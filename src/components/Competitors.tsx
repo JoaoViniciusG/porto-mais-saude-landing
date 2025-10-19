@@ -51,7 +51,7 @@ const Competitors = () => {
   };
 
   return (
-    <section id="concorrentes" className="py-20 bg-background">
+    <section id="concorrentes" className="min-h-screen snap-start flex flex-col items-center justify-center py-20 bg-background">
       <div className="container mx-auto px-4">
         <div ref={ref} className={`max-w-5xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">

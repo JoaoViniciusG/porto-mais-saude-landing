@@ -5,7 +5,7 @@ const Problem = () => {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="problema" className="py-20 bg-background">
+    <section id="problema" className="min-h-screen flex flex-col items-center justify-center snap-start py-20 bg-background">
       <div className="container mx-auto px-4">
         <div ref={ref} className={`max-w-4xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">

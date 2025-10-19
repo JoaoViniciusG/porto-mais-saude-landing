@@ -38,7 +38,7 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="proximos-passos" className="py-20 bg-background">
+    <section id="proximos-passos" className="py-20 snap-start bg-background">
       <div className="container mx-auto px-4">
         <div ref={ref} className={`max-w-4xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
@@ -59,7 +59,7 @@ const Timeline = () => {
               {milestones.map((milestone, index) => (
                 <div
                   key={index}
-                  className={`relative flex gap-6 transition-all duration-700 delay-${(index + 1) * 100} ${isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                  className={`relative flex gap-6 transition-all duration-700 delay-${100 + (index * 200)} ${isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                   {/* Icon */}
                   <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center z-10 shadow-lg ${

@@ -28,7 +28,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="equipe" className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section id="equipe" className="min-h-screen snap-start flex flex-col items-center justify-center py-20 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <div ref={ref} className={`max-w-6xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
@@ -45,7 +45,7 @@ const Team = () => {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className={`bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-700 delay-${(index + 1) * 100} ${isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+                className={`bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-700 delay-${100 + (index * 200)} ${isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center mb-4 shadow-lg">

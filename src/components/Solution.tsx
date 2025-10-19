@@ -5,7 +5,7 @@ const Solution = () => {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="solucao" className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section id="solucao" className="min-h-screen snap-start flex flex-col items-center justify-center py-20 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <div ref={ref} className={`max-w-6xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
@@ -36,13 +36,13 @@ const Solution = () => {
                 icon: DollarSign,
                 title: "Custo Acessível",
                 description: "Solução econômica que reduz drasticamente os custos de infraestrutura",
-                delay: "delay-300"
+                delay: "delay-200"
               },
               {
                 icon: Clock,
                 title: "Rápida Implantação",
                 description: "Atendimento operacional em dias, não em meses ou anos",
-                delay: "delay-400"
+                delay: "delay-300"
               }
             ].map((item, index) => (
               <div
