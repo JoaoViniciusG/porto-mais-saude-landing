@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JoaoViniciusG.github.io/porto-mais-saude-landing/",
+  "homepage": "https://EliasMoreiraDev.github.io/porto-mais-saude-landing-main/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
